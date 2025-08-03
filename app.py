@@ -6,7 +6,7 @@ import subprocess
 from werkzeug.utils import secure_filename
 from PIL import Image
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 UPLOAD_FOLDER = 'uploads/'
 CONVERTED_FOLDER = 'converted_pdfs/'
 MERGED_FOLDER = 'temp_outputs/'
